@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  # No build command for this repo — static files are in `public`.
   functions = "functions"
   publish = "public"
 
