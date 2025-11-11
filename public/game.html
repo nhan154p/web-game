@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Tank.io Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+</head>
+<body class="game-page">
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Game UI -->
+        <div class="game-ui">
+            <div class="player-info">
+                <h3 id="playerName">Chiến Binh</h3>
+                <div class="info-row">
+                    <span>💚 HP:</span>
+                    <span id="hpValue">100/100</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" id="hpBar" style="width: 100%"></div>
+                </div>
+                
+                <div class="info-row" style="margin-top: 1rem;">
+                    <span>⚡ Năng Lượng:</span>
+                    <span id="energyValue">100/100</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar energy" id="energyBar" style="width: 100%"></div>
+                </div>
+
+                <div class="info-row" style="margin-top: 1rem;">
+                    <span>📊 Điểm:</span>
+                    <span id="scoreValue" style="color: #ffb400;">0</span>
+                </div>
+                <div class="info-row">
+                    <span>📈 Cấp:</span>
+                    <span id="levelValue" style="color: #ffb400;">1</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h4>⌨️ Điều Khiển</h4>
+                <div class="control-item">W/A/S/D - Di Chuyển</div>
+                <div class="control-item">🖱️ Chuột - Ngắm</div>
+                <div class="control-item">Click Trái - Bắn</div>
+                <div class="control-item">ESC - Quay Lại</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/socket.js"></script>
+    <script src="js/game.js"></script>
+    </body>
+    </html>

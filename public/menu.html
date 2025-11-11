@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Chính - Tank.io Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="menu-page">
+    <!-- Background -->
+    <div class="background">
+        <canvas id="radarCanvas" class="radar"></canvas>
+        <div class="animated-bg"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 class="logo" style="margin-bottom: 2rem;">🚀 Tank.io Online</h1>
+
+        <!-- Player Info Card -->
+        <div class="player-card">
+            <div class="player-avatar" id="playerAvatar">🚀</div>
+            <div class="player-name" id="playerName">Chiến Binh</div>
+            <div class="player-stats">
+                <div class="stat">
+                    <div class="stat-label">Điểm</div>
+                    <div class="stat-value" id="playerScore">0</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Cấp Độ</div>
+                    <div class="stat-value" id="playerLevel">1</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mode selector -->
+        <div class="mode-select">
+            <label>Chế độ chơi:</label>
+            <button id="mode-offline" class="mode-btn active">Offline (vs Bot)</button>
+            <button id="mode-online" class="mode-btn">Online (vs Người)</button>
+        </div>
+
+        <!-- Menu Buttons -->
+        <div class="menu-buttons">
+            <button class="btn-menu" onclick="startGame()">
+                <span>▶️</span>
+                <span>Chơi Ngay</span>
+            </button>
+            <button class="btn-menu" onclick="goToShop()">
+                <span>⚙️</span>
+                <span>Cửa Hàng</span>
+            </button>
+            <button class="btn-menu" onclick="goToLeaderboard()">
+                <span>🏆</span>
+                <span>Bảng Xếp Hạng</span>
+            </button>
+            <button class="btn-menu btn-logout" onclick="logout()">
+                <span>🚪</span>
+                <span>Đăng Xuất</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/radar.js"></script>
+    </body>
+    </html>

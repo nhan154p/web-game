@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Xếp Hạng - Tank.io Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="leaderboard-page">
+    <!-- Background -->
+    <div class="background">
+        <canvas id="radarCanvas" class="radar"></canvas>
+        <div class="animated-bg"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="leaderboard-container">
+            <h2 class="leaderboard-title">🏆 Bảng Xếp Hạng</h2>
+
+            <ul class="leaderboard-list" id="leaderboardList">
+                <!-- Leaderboard items will be populated by JavaScript -->
+            </ul>
+
+            <a href="menu.html" class="back-link">← Quay Lại Menu</a>
+        </div>
+    </div>
+
+    <script src="js/leaderboard.js"></script>
+    <script src="js/radar.js"></script>
+        <script src="js/storage.js"></script>
+    </body>
+    </html>

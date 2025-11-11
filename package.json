@@ -1,0 +1,27 @@
+{
+  "name": "tank-io-online",
+  "version": "1.0.0",
+  "description": "A multiplayer tank shooter game built with Node.js and WebSocket",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "tank",
+    "io",
+    "multiplayer",
+    "websocket"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng - Tank.io Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shop-page">
+    <!-- Background -->
+    <div class="background">
+        <canvas id="radarCanvas" class="radar"></canvas>
+        <div class="animated-bg"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="shop-container">
+            <div class="shop-header">
+                <h2>🛍️ Cửa Hàng</h2>
+                <div class="currency-display">
+                    <div class="currency">
+                        <span>💰 Điểm: </span>
+                        <span id="playerPoints">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skins Section -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.5rem;">
+                    🎨 Skin Xe Tăng
+                </h3>
+                <div class="shop-grid" id="skinsGrid">
+                    <!-- Skins will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Upgrades Section -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.5rem;">
+                    ⚙️ Nâng Cấp Vĩnh Viễn
+                </h3>
+                <div class="shop-grid" id="upgradesGrid">
+                    <!-- Upgrades will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Cosmetics Section -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.5rem;">
+                    ✨ Hiệu Ứng & Biểu Tượng
+                </h3>
+                <div class="shop-grid" id="cosmeticsGrid">
+                    <!-- Cosmetics will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <a href="menu.html" class="back-link">← Quay Lại Menu</a>
+        </div>
+    </div>
+
+    <script src="js/shop.js"></script>
+    <script src="js/radar.js"></script>
+        <script src="js/storage.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank.io Online - Bắn Xe Tăng Trực Tuyến</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="homepage">
+    <!-- Background with animated radar -->
+    <div class="background">
+        <canvas id="radarCanvas" class="radar"></canvas>
+        <div class="animated-bg"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="logo-section">
+            <h1 class="logo">🚀 Tank.io Online</h1>
+            <p class="tagline">Trận chiến xe tăng trực tuyến hôm nay!</p>
+        </div>
+
+        <div class="buttons-container">
+            <a href="auth.html?mode=login" class="btn btn-primary btn-lg">
+                <span class="icon">🔑</span>
+                <span>Đăng Nhập</span>
+            </a>
+            <a href="auth.html?mode=signup" class="btn btn-secondary btn-lg">
+                <span class="icon">🧾</span>
+                <span>Đăng Ký</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Tank.io Online - Bản quyền được bảo vệ</p>
+            <div class="footer-links">
+                <a href="#guide">📖 Hướng Dẫn Chơi</a>
+                <span class="separator">•</span>
+                <a href="#discord" target="_blank">💬 Discord</a>
+                <span class="separator">•</span>
+                <a href="#privacy">🔒 Riêng Tư</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/radar.js"></script>
+</body>
+</html>

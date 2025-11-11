@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác Thực - Tank.io Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <!-- Background -->
+    <div class="background">
+        <canvas id="radarCanvas" class="radar"></canvas>
+        <div class="animated-bg"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="auth-container" id="authContainer">
+            <div class="auth-title">
+                <h2 id="authTitle">Đăng Nhập</h2>
+                <p id="authSubtitle">Chào mừng trở lại, chiến binh!</p>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage"></div>
+
+            <form id="authForm" onsubmit="handleAuthSubmit(event)">
+                <div class="form-group">
+                    <label for="username">Tên người dùng</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Nhập tên người dùng"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Nhập mật khẩu"
+                        required
+                    >
+                </div>
+
+                <div class="form-group" id="confirmPasswordGroup" style="display: none;">
+                    <label for="confirmPassword">Xác nhận mật khẩu</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        placeholder="Xác nhận lại mật khẩu"
+                    >
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    Đăng Nhập
+                </button>
+            </form>
+
+            <div class="auth-link" id="authLink">
+                <p>Chưa có tài khoản? 
+                    <a href="auth.html?mode=signup">Đăng ký tại đây</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/radar.js"></script>
+        <script src="js/storage.js"></script>
+    </body>
+    </html>
